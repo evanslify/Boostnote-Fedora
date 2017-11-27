@@ -10,7 +10,7 @@ Source2:    %{name}.js
 Patch0:		boostnote-warning-fix.patch
 Patch1:		boostnote-remove-analytics.patch     
 
-BuildRequires:	npm, grunt-cli, git
+BuildRequires:	gcc-c++, make, git
 Requires:	electron, nodejs
 
 %description
@@ -25,6 +25,9 @@ cp -p %SOURCE2
 
 
 %build
+curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+dnf install -y nodejs npm
+npm install -g grunt-cli
 cd %{name}-%{version}
 npm install --no-optional
 grunt compile
