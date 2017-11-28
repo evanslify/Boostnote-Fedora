@@ -2,8 +2,8 @@
 Name=Boostnote
 GenericName=Boostnote is an open source note-taking app made for programmers just like you.
 Comment=Boostnote is an open source note-taking app made for programmers just like you.
-Exec=/usr/bin/boostnote %U
-Icon=boostnote
+Exec=/opt/Boostnote/Boostnote %U
+Icon=/opt/Boostnote/resources/app.png
 Type=Application
 StartupNotify=true
 Categories=Development;Utility;

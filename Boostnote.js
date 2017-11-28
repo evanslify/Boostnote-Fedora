@@ -1,6 +1,6 @@
 #!/usr/bin/electron
 
-const name = 'boostnote';
+const name = 'Boostnote';
 
 const {app} = require('electron');
 const fs = require('fs');
@@ -15,7 +15,7 @@ fs.closeSync(fd);
 process.argv.splice(0, 1);
 
 // Set application paths.
-const appPath = path.join(path.dirname(__dirname), 'lib', name);
+const appPath = path.join(path.dirname(__dirname), name);
 const packageJson = require(path.join(appPath, 'package.json'));
 const productName = 'Boostnote';
 app.setAppPath(appPath);
