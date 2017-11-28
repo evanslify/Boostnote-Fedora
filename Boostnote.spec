@@ -20,7 +20,7 @@ An open source note-taking app for programmers.
 %prep
 %autosetup -n %{name}-%{version}
 # %patch0
-cp -p %SOURCE1 %SOURCE1
+# cp -p %SOURCE1 %SOURCE1
 cp -p %SOURCE2 %{name}
 
 
